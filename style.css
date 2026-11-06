@@ -1,0 +1,35 @@
+:root{
+  --fond:#F7F8FA; --surface:#FFFFFF; --texte:#1E2433; --texte-doux:#5A6275;
+  --accent:#3B5BDB; --filet:#DDE1E8;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --fond:#12151C; --surface:#1A1F29; --texte:#E6E9EF; --texte-doux:#A3AABA;
+    --accent:#8CA4FF; --filet:#2C3342;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--fond); color:var(--texte);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:1.0625rem; line-height:1.65;
+}
+.page{max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 3rem}
+header.entete{border-bottom:1px solid var(--filet); padding-bottom:1.25rem; margin-bottom:2rem}
+.studio{margin:0; color:var(--texte-doux); font-size:.95rem}
+.studio a{color:inherit}
+h1{font-size:2rem; line-height:1.2; margin:.35rem 0 .25rem; font-weight:700; letter-spacing:-.01em}
+.maj{margin:0; color:var(--texte-doux); font-size:.95rem}
+h2{font-size:1.2rem; margin:2.25rem 0 .5rem; line-height:1.3}
+p,ul{margin:.5rem 0 1rem}
+ul{padding-left:1.25rem}
+li{margin:.35rem 0}
+strong{font-weight:650}
+a{color:var(--accent); text-underline-offset:.15em}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px}
+.encadre{background:var(--surface); border:1px solid var(--filet); border-radius:10px; padding:1rem 1.25rem; margin:1.25rem 0}
+footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--filet); color:var(--texte-doux); font-size:.9rem}
+footer nav a{margin-right:1rem}
